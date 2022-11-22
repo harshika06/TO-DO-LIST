@@ -20,12 +20,12 @@ function addEvent(e) {
     newItem.appendChild(deletebtn);
 
     itemList.appendChild(newItem);
-    item.value = "";
+    item.value = " ";
 }
 
 function removeEvent(e) {
     if (e.target.classList.contains('delete')) {
-        if (confirm('Do ')) {
+        if (confirm('Do You Really Want to Delete this?? ')) {
             var li = e.target.parentElement;
             itemList.removeChild(li);
         }
