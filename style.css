@@ -1,0 +1,93 @@
+:root{
+    background-color: var(--radio-color);
+   
+}
+
+body{
+    background-color: var(--radio-color);
+
+}
+
+
+.form-control{
+    margin: 50px;
+    border: 2px solid black;
+    width: 50%;
+    background: none;
+
+}
+.form-control1{
+    margin: 50px;
+    border: 0;
+    width: 50%;
+    background: none;
+
+}
+
+
+#header-title
+{
+    margin-top: 35px;
+    font-size: 60px;
+}
+
+
+.color-changer{
+    display: flex;
+    gap:20px;
+    padding:10px;
+    width: fit-content;
+    margin-inline: auto;
+    border:0;
+}
+
+input[type = "radio"]{
+    appearance: none;           
+    height: 1.5rem;
+    width: 1.5rem;
+    border:2px solid black;
+    border-radius: 50%;
+    offset: 1rem;
+    
+
+}
+
+input[type="radio"]:checked{
+    background-color: var(--radio-color);
+}
+
+#babyPink{
+    --radio-color: rgb(242,172,185);
+}
+#blue{
+    --radio-color: rgb(95, 128, 200);
+}
+#orange{
+    --radio-color: rgb(255, 151, 65);
+}
+#dark{
+    --radio-color: rgb(114, 109, 109);
+}
+#light{
+    --radio-color: rgb(255, 255, 255);
+}
+
+:root:has(#babyPink:checked){
+    background-color:rgb(242,172,185);;
+}
+
+:root:has(#blue:checked){
+    background-color:  rgb(95, 128, 200);
+}
+:root:has(#light:checked){
+    background-color: rgb(255, 255, 255);
+}
+
+:root:has(#orange:checked){
+    background-color: rgb(255, 151, 65);
+}
+
+
+:root:has(#dark:checked){
+    background-color: rgb(114, 109, 109);
+}
